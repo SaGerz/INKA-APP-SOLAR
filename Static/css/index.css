@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
+}
+
+/* section {
+    padding-top: 10rem;
+} */
+
+.jumbotron {
+    background-image: url(../Images/homeBG.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+
+.title {
+    margin-top: 85px;
+    overflow: hidden;
+}
+
+/* .line {
+    float: left;
+    width: 6px;
+    height: 185px;
+    border: 2px solid #fff;
+    background-color: #fff;
+} */
+
+.border-typePro {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 140px;
+    padding: 1px ;
+    text-align: center;
+}
+
+.inka, .inspeksi, .by {
+    color: #fff;
+}
+
+.image-example, .img1, .img2, .img3, .img4 {
+    /* width: 300px; */
+    height: 255px;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.img1, .img2, .img3, .img4 {
+    border: 4px solid #fff;
+}
+
+.section-welcome {
+    background-image: url(../Images/welcomeBG.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+.line2 {
+    float: left;
+    width: 6px;
+    height: 87px;
+    border: 2px solid #3b0606;
+    background-color: #3b0606;
+}
+
+.apel-icons .img-apel-icons {
+    width: 710px;
+    height: 460px;
+    float: right;
+    margin-top: -400px;
+    margin-right: 60px;
+}
+
+.welcome-text, .paragraf-section{
+    color: #000;
+    line-height: 14px;
+    font-size: 20px;
+}
+
+.section-aplikasi {
+    background-image: url(../Images/bg5.jpg);
+    height: 110vh;
+    background-size: cover;
+    margin-bottom: 250px;
+}
+
+.prewiew, .result {
+    border: 5px solid #eee;
+}
+
+.capture, .analyse {
+    background-color: #F6F6F6;
+    border-color: #205732;
+    padding: 8px;
+    text-align: center;
+    padding-right: 25px;
+    color: #205732;
+    width: 10em;
+}
+
+.analyse-section {
+    background-image: url(../Images/bg4.jpg);
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden; /* Menghindari scrollbar horizontal */
+}
+
+.analyse-section .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.analyse a {
+    text-decoration: none ;
+    color: #205732;
+}
+
+.about-section {
+    background-image: url(../Images/bgAbout.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.visi-misi-section {
+    background-image: url(../Images/bgVisiMisi.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* max-width: 100%; */
+    height: 700px;
+}
+
+.Misi .misi-text {
+    color: #FFFFFF;
+}

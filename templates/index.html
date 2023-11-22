@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solar</title>
+    <link rel="stylesheet" href="../Static/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="jumbotron mt-auto py-5 px-4">
+      <!-- Navabar -->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 mb-4">
+          <div class="container-fluid">
+         
+              <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/orbit.png" alt="" width="85"></a>
+              <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/tut-wuri-handayani-7783.png" alt="" width="50"></a>
+              <a class="navbar-brand" href="#"><img class="logo" src="../Static/Images/Kampus-Merdeka.png" alt="" width="65"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end p-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Our team</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#capture">Capture Now</a></li>
+                                <li><a class="dropdown-item" href="#analyse">Analyse</a></li>
+                                <li><a class="dropdown-item" href="#visi-misi">Visi & Misi</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+        <!-- navbar End -->
+
+        <!-- Title Project -->
+        <div class="title py-5 px-5">
+          <div class="line"></div>
+          <div class="right-side px-4">
+            <div class="border-typePro">
+              <h4>Agriculture</h4>
+            </div>
+            <h1 class="inka py-2">INKA</h1>
+            <h2 class="inspeksi">Inspeksi Kualitas Buah Apel</h2>
+            <p class="by">By Solar</p>
+          </div>
+        </div>
+        
+        <!-- Gambar apel -->
+        <div class="image-example px-4">
+          <div class="row row-cols-4">
+            <div class="col">
+              <img class="img1" src="../Static/Images/image1.jpeg" alt="apel1">
+            </div>
+            <div class="col">
+              <img class="img2" src="../Static/Images/image2.jpeg" alt="apel2">
+            </div>
+            <div class="col">
+              <img class="img3" src="../Static/Images/image3.jpeg" alt="apel3">
+            </div>
+            <div class="col">
+              <img class="img4" src="../Static/Images/image4.jpeg" alt="apel4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron section end -->
+      
+
+
+
+      <!-- Section Welcome Start -->
+      <div class="section-welcome py-5 px-5 " id="welcome">
+        <div class="welcome-text mt-5 py-5 px-3">
+          <div class="welcome-text-section px-5 pt-5 mt-5">
+            <div class="pt-2 px-3">
+              <h3 class="py-4">INKA Application</h3>
+              <div class="paragraf-section">
+                <p>Aplikasi INKA (Inspeksi Kualitas Apel) </p>
+                <p>merupakan sebuah solusi perangkat lunak </p>
+                <p>dirancang untuk membantu dalam </p>
+                <p>proses inspeksi buah apel. Aplikasi </p>
+                <p>ini ditujukan untuk berbagai pihak yang</p> 
+                <p>terlibat dalam industri pertanian, seperti</p> 
+                <p> petani, produsen, distributor, dan </p> 
+                <p>pengekspor apel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section Welcome end -->
+
+
+      <!-- Section aplikasi -->
+      <div class="section-aplikasi py-4" id="capture"> 
+        <!-- Camera Start -->
+        <div class="camera pt-5 px-5">
+          <!-- <h2 class="text-center">Aplikasi</h2> -->
+          <div class="mx-auto p-2 row justify-content-center fs-5">
+            <div class="contain-app py-5 ">
+                <div class="row gx-5 py-5 px-5 mt-3">
+                  <div class="col-5 px-5 mt-5 d-flex flex-column align-items-center">
+                    <video class="prewiew p-2" id="preview"></video>
+                    <button type="button" class="capture btn-lg mt-3 rounded-pill btn-success" id="capture">Capture</button>
+                  </div>
+                  <div class="col-2 px-5 mt-5">
+                    <canvas class="p-3" style="display: none;" id="output"></canvas>
+                  </div>
+                  <div class="col-5 px-5 mt-5 d-flex flex-column align-items-center">
+                    <img class="result p-2" id="result" alt="hasil-deteksi">
+                    <button type="button" class="analyse btn-lg mt-3 rounded-pill btn-info" > <a href="#analyse">Analisys</a></button>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+            </div> -->
+          </div>
+        </div>
+        <!-- Camera end -->
+      </div> 
+      <!-- Section aplikasi end -->
+
+
+      <!-- Analyse Section Start -->
+      <div class="analyse-section" id="analyse">
+            <div class="container py-5">
+              <div class="row py-5 mt-5">
+                <div class="col-4 ms-auto">
+                  <div class="card">
+                    <img class="card-img-top" src="../Static/Images/analyse-apel1.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Apel segar memiliki tampilan yang sempurna dan biasanya memiliki kulit yang mengkilap dan halus yang bisa berwarna merah, hijau, atau campuran dari warna-warna tersebut, tergantung pada jenisnya.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card">
+                    <img class="card-img-top" src="../Static/Images/analyse-apel2.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Apel yang tidak segar adalah frasa yang menggambarkan keadaan apel yang telah kehilangan kesegarannya. Ini mengacu pada apel yang mungkin telah mengalami oksidasi, penuaan, atau penyimpanan yang tidak tepat sehingga kualitasnya menurun. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- Analyse Section End -->
+
+
+
+      <div class="white-bg"> 
+        <!-- About Section -->
+        <div class="about-section" id="about">
+          <div class="container-about-section px-5 pt-5 mt-5">
+            <div class="pt-5 mt-5">
+              <div class="about-text pt-4 mt-4 px-4">
+                <div class="texting pt-3 mt-3">
+                  <p>
+                    Kami adalah tim yang berkomitmen untuk memberikan solusi inovatif dalam mendeteksi kualitas buah apel secara otomatis melalui penggunaan algoritma YOLOv5. Dengan berbagai penelitian dan pengembangan yang kami lakukan, INKA menjadi sebuah platform unggul yang memberikan kemudahan dan keakuratan dalam inspeksi buah apel.
+                  </p>
+                  <p>Aplikasi INKA akan memperlihatkan hasil analisa dari buah apel yang telah di potret dan mengklasifikasikan apel tersebut ke dalam “Apel Segar” atau “Apel Tidak Segar”</p>
+                </div>
+              </div>
+  
+            </div>
+            <div class="container pt-4">
+              <div class="row">
+                <div class="col-3 d-flex justify-content-center">
+                  <img src="../Static/Images/about1.jpeg" alt="about1" width="250">
+                </div>
+                <div class="col-3">
+                  <img src="../Static/Images/about2.jpeg" alt="about2" width="250">
+                </div>
+                <div class="col-3">
+                  <img src="../Static/Images/about3.jpeg" alt="about3" width="250">
+                </div>
+                <div class="col-3">
+                  <img src="../Static/Images/about4.png" alt="about4" width="170">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About Section end -->
+  
+  
+  
+     
+        <!-- Visi misi  -->
+         <div class="visi-misi-section" id="visi-misi">
+          <div class="container pt-5 mt-5 px-5">
+            <div class="pt-5 mt-5">
+              <div class="visi pt-2 mt-2 px-5 ms-5">
+                  <div class="pt-5 mt-5 px-5">
+                      <h4>
+                        Visi
+                      </h4>
+                      <p>Visi kami adalah menciptakan revolusi dalam industri pertanian dengan menjadi pionir dalam penggunaan teknologi deteksi kualitas buah apel. Kami berusaha untuk membawa perubahan positif dengan memperkenalkan solusi terkini yang memadukan kecerdasan buatan dan pertanian, mengarah pada pertanian yang lebih efisien, berkelanjutan, dan berdaya saing tinggi.</p>
+                  </div>
+                  <div class="Misi pt-5 mt-5 px-5">
+                    <div class="misi-text pt-2 mt-3">
+                      <h4>Misi</h4>
+                      <p>
+                        Misi kami adalah menyediakan solusi terdepan untuk mendeteksi kualitas buah apel dengan cepat, akurat, dan efisien. Kami berkomitmen untuk membantu para petani, pengusaha, dan pelaku industri pertanian dalam meningkatkan produktivitas mereka melalui teknologi terkini.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+         </div>
+         </div>
+         <!-- Visi misi end -->
+
+
+
+
+
+        
+        <script src="../Static/JS/camera.js"></script>
+        <script src="../Static/JS/observers.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
