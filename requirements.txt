@@ -22,4 +22,5 @@ torch>=1.8.0
 torchvision>=0.9.0
 tqdm>=4.64.0
 ultralytics>=8.0.147
+gunicorn==21.2.0
 uvicorn
