@@ -138,3 +138,25 @@ video {
 .Misi .misi-text {
     color: #FFFFFF;
 }
+
+
+
+.our-team-section {
+    background-image: url(../Images/ourTeamBG.jpg);
+    background-size: cover;
+    height: 130vh;
+}
+
+.container-our-team {
+    background: rgba(15, 64, 31, .9);
+    margin: 50px;
+    text-align: center;
+    border-radius: 35px;
+    padding: 0 10px;
+}
+
+.container-our-team .member {
+    line-height: 12px;
+    color: #fff;
+    font-size: 12px;
+}
