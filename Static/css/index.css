@@ -144,7 +144,8 @@ video {
 .our-team-section {
     background-image: url(../Images/ourTeamBG.jpg);
     background-size: cover;
-    height: 130vh;
+    height: 137vh;
+    /* height: 100%; */
 }
 
 .container-our-team {
@@ -156,7 +157,7 @@ video {
 }
 
 .container-our-team .member {
-    line-height: 12px;
+    line-height: 10px;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
 }
