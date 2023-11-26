@@ -36,10 +36,20 @@ capture.addEventListener('click', () => {
         }
     })
     .then(response => {
-        if (response.status === 200 && response.headers.get('content-type').includes('application/json')) {
-            return response.json();
+        if (response.ok) {
+            // Periksa tipe konten respons
+            const contentType = response.headers.get('content-type');
+            
+            if (contentType && contentType.includes('application/json')) {
+                // Respons adalah JSON, parse dan kembalikan data
+                return response.json();
+            } else {
+                // Respons bukan JSON, tanggapi sesuai kebutuhan
+                throw new Error('Invalid content type in response');
+            }
         } else {
-            throw new Error(`Invalid JSON response or HTTP error! Status: ${response.status}`);
+            // Respons memiliki status kode HTTP yang tidak berhasil
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
     })
     .then(data => {
