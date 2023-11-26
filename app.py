@@ -89,5 +89,7 @@ def get_detected_image():
     return send_file(result_image_path, mimetype='image/jpg')
 
 
+# if __name__ == "__main__":  
+#     app.run(debug=True)
 if __name__ == "__main__":  
-    app.run(debug=True)
+    app.run(debug=False)
