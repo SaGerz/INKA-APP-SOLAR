@@ -21,4 +21,4 @@ torch
 gunicorn
 setuptools
 wheel
-pip
+pandas
