@@ -66,10 +66,13 @@ def detect():
             # cv2.putText(image_np, label, (x_min, y_min - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
             # Simpan hasil
-            result_image = Image.fromarray(image_np)
+            # result_image = Image.fromarray(image_np)
             # image.save(result_image_path)
-            result_image.save('Static/Images/detected_image.jpg')
+            # result_image.save('Static/Images/detected_image.jpg')
+            # result_image_path = os.path.join(os.getcwd(), 'Static/Images/detected_image.jpg')
+            result_image = Image.fromarray(image_np)
             result_image_path = os.path.join(os.getcwd(), 'Static/Images/detected_image.jpg')
+            result_image.save(result_image_path)
 
         with open(result_image_path, 'rb') as image_file:
             image_base64 = base64.b64encode(image_file.read()).decode('utf-8')

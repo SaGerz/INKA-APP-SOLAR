@@ -65,6 +65,7 @@ capture.addEventListener('click', () => {
         .then(response => response.blob())
         .then(blob => {
             result.src = URL.createObjectURL(blob)
+            console.log(result.src)
         })
         .catch((error) => {
             console.log('Error : ', error)
