@@ -35,7 +35,13 @@ capture.addEventListener('click', () => {
             'Content-Type' : 'application/json'
         }
     })
-    .then(response => response.json())
+    .then(response => {
+        if (response.status === 200 && response.headers.get('content-type').includes('application/json')) {
+            return response.json();
+        } else {
+            throw new Error(`Invalid JSON response or HTTP error! Status: ${response.status}`);
+        }
+    })
     .then(data => {
         console.log(data)
         // Mengambil gambar hasil deteksi sebagai base64 string
