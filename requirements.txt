@@ -13,7 +13,7 @@ scipy
 thop  
 MarkupSafe
 colorama
-numpy==1.23.0
+numpy==1.21.6
 opencv_python
 opencv_python_headless
 Pillow
