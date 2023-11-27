@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, send_file, jsonify
-from from flask_cors import CORS
+from flask_cors import CORS
 import base64
 from PIL import Image
 from io import BytesIO
