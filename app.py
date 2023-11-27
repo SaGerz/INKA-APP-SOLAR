@@ -18,7 +18,8 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='Models/best.pt')
 # app = Flask(__name__, '/Static')
 # app = Flask(__name__, static_folder='Static', static_url_path='/Static')
 app = Flask(__name__, static_folder='Static')
-CORS(app)
+CORS(app, resources={r"/detect": {"origins": "https://inka-solar-app.onrender.com"}})
+CORS(app, resources={r"/detected_image": {"origins": "https://inka-solar-app.onrender.com"}})
 
 
 @app.route("/")
