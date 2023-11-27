@@ -14,7 +14,8 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='Models/best.pt')
 # app = Flask(__name__)
 # app.static_folder = 'static'
 # app = Flask(__name__, '/Static')
-app = Flask(__name__, static_folder='Static', static_url_path='/Static')
+# app = Flask(__name__, static_folder='Static', static_url_path='/Static')
+app = Flask(__name__, static_folder='Static')
 
 
 @app.route("/")
