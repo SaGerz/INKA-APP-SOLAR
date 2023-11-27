@@ -53,6 +53,7 @@ capture.addEventListener('click', () => {
         }
     })
     .then(data => {
+        // console.log(data.result_image_base64)
         console.log(data)
         // Mengambil gambar hasil deteksi sebagai base64 string
         // const resultImageBase64 = data.result_image_base64;
