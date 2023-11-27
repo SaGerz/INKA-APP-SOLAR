@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, send_file, jsonify
+from from flask_cors import CORS
 import base64
 from PIL import Image
 from io import BytesIO
@@ -6,6 +7,7 @@ import os
 import torch
 import cv2
 import numpy as np
+
 
 # model = torch.hub.load('ultralytics/yolov5', path='Models/best.pt')
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='Models/best.pt')
@@ -16,6 +18,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='Models/best.pt')
 # app = Flask(__name__, '/Static')
 # app = Flask(__name__, static_folder='Static', static_url_path='/Static')
 app = Flask(__name__, static_folder='Static')
+CORS(app)
 
 
 @app.route("/")
